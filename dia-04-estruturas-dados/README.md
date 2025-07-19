@@ -1,36 +1,69 @@
-# Estruturas de dados
+# Estruturas de Dados
 
-## Pilhas 
-A pilha funciona recursivamente. Seguindo o que chamamos de LIFO (last In, First Out), ou seja, o último elemento adicionado a lista será o primeiro 'lido'. Portanto, as pilhas funcionam adicionando e retirando elementos do final.
+## Pilhas
+A pilha funciona de forma semelhante a um sistema recursivo, seguindo o princípio **LIFO** (*Last In, First Out*), ou seja, o último elemento adicionado é o primeiro a ser removido. Isso significa que os elementos são adicionados e removidos sempre pelo final da estrutura.
 
-**Vantagem:** A pilha controla a ordem de chamada de funções. Ou seja, quando uma função é chamada dentro de outro (recursão), é a pilha de chamada que determina o momento de entrar e sair de cada função.
+**Vantagens:**  
+- Controla a ordem de chamadas de funções, sendo essencial em processos recursivos.  
+- Facilita a gestão da execução de funções aninhadas.
 
-**Desvantagem:** Em pilhas muito grandes utiliza-se muita memória, o que pode levar a um erro de Overflow. E não é possível acessar elementos de forma aleatório.
+**Desvantagens:**  
+- Em pilhas muito grandes, pode haver alto consumo de memória, levando a erros como *stack overflow*.  
+- Não permite acesso aleatório aos elementos.
 
-## Fila
-As filas possuem funcionamento similar ao das pilhas. No entanto, as filas são estruturas de dados FIFO (First In, First Out). Portanto funcionam adicionando elementos no final e removendo do início.
+---
 
-**Vantagem:** Permite a pesquisa de elementos seguindo a ordem em que foram adicionados.
+## Filas
+As filas funcionam de maneira semelhante às pilhas, mas seguem o princípio **FIFO** (*First In, First Out*). Ou seja, os elementos são adicionados no final e removidos do início da estrutura.
 
-**Desvantagens:** Não é possiível acessar elementos de forma aleatória.
+**Vantagens:**  
+- Permite o processamento dos elementos na ordem em que foram adicionados.  
+- Ideal para situações como filas de impressão, buffers, agendamento de tarefas, etc.
 
-## Lista Encadeada
-Listas encadeadas permitem armazenar listas de elementos na memória. Quando se trata de arrays, sabemos que os elementos são armezenados de forma contigua. Já em listas encadeadas cada item armazena o endereço do próximo item. Assim, conectando endereços aleatórios da memória.
+**Desvantagens:**  
+- Não permite acesso aleatório aos elementos.  
+- Pode ser ineficiente se não for implementada com estrutura circular ou ponteiros.
 
-**Vantagens:** 
+---
 
-**Desvantagens:** Não é possível acessar elemetos aleatóriamente. Para encontar um item é necessário percorrer toda a lista.
+## Listas Encadeadas
+As listas encadeadas armazenam elementos de forma não contígua na memória. Diferente dos arrays, onde os elementos ocupam posições consecutivas, cada elemento (ou nó) da lista armazena um valor e o endereço do próximo nó, formando uma cadeia.
 
-# Deque
-Como já mencionado anteriormente, pilhas são estruturas de dados LIFO (Last In, First Out) e filas são estruturas FIFO (First In, First Out). Deques são estruturas de dados que seguem um funcionamento semelhante ao de pilhas e filas. Porém, diferenciam-se por possibilitarem a manipulação de dados em ambas as direções (tanto pelo começo, quanto pelo final). Ou seja, permitem adicionar e remover itens tanto do início quando do final.
+**Vantagens:**  
+- Fácil inserção e remoção de elementos em qualquer ponto da lista.  
+- Uso eficiente de memória em operações dinâmicas.
 
-**Vantagens:**
+**Desvantagens:**  
+- Acesso sequencial: é necessário percorrer a lista do início até o elemento desejado.  
+- Maior uso de memória devido aos ponteiros adicionais.
 
-**Desvantagens:**
+---
 
-# Tabela Hash
-Tabela hash é uma estrutura de dados que armazena informações associando chaves a valores, permitindo buscar, inserir e remover elementos de forma muito rápida. Ela funciona aplicando uma função hash sobre a chave para determinar onde o valor será armazenado. Ou seja, é uma forma eficiente de implementar um dicionário.
+## Deque
+Um **Deque** (*Double Ended Queue*) é uma estrutura de dados que permite inserções e remoções tanto no início quanto no final da fila, combinando características de pilhas (LIFO) e filas (FIFO).
 
-**Vantagens:** Seu tempo de exucução é O(1), e O(n) no pior caso.
+**Vantagens:**  
+- Flexível, pois permite operações em ambas as extremidades.  
+- Útil em algoritmos que exigem varredura bidirecional.
 
-**Desvantagens:**
+**Desvantagens:**  
+- Pode ser mais complexa de implementar.  
+- Pode consumir mais memória dependendo da estrutura utilizada.
+
+---
+
+## Tabela Hash
+Uma tabela hash associa chaves a valores e permite operações de inserção, busca e remoção de forma eficiente. Utiliza uma função hash para mapear cada chave a um índice de uma tabela.
+
+**Vantagens:**  
+- Tempo de execução médio de **O(1)** para operações básicas.  
+- Ideal para implementar dicionários, caches e conjuntos.
+
+**Desvantagens:**  
+- Em caso de colisão (chaves diferentes gerando o mesmo índice), o desempenho pode cair para **O(n)**.  
+- A eficiência depende da qualidade da função hash.  
+- Pode haver desperdício de memória.
+
+---
+
+> 📌 *Este é um guia introdutório sobre estruturas de dados. Para aplicações práticas e códigos de exemplo, confira os diretórios e arquivos do projeto!*
