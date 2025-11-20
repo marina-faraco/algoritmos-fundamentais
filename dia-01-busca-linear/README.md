@@ -1,4 +1,4 @@
-# 📘 Dia 01 - Busca Linear
+# 📘 Busca Linear
 
 ## 🔍 O que é?
 
