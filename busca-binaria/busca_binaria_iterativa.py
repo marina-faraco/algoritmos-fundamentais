@@ -10,7 +10,7 @@ def pesquisa_binaria_iterativa(lista, alvo):
 
     # o loop funciona enquanto não chegar a um único elemento
     while esquerda <= direita:
-        # divide a lista ao meio, tetornando um valor interiro
+        # divide a lista ao meio, retornando um valor interiro
         meio = (esquerda + direita) // 2  
         valor_meio = lista[meio]
 
