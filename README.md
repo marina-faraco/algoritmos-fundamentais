@@ -1,6 +1,23 @@
-# Fundamentos de Programação
+# 🧠 Algoritmos Fundamentais
 
-Repositório contendo exercícios de lógica de programação desenvolvidos
-em Python. Abrange condicionais, loops, funções, vetores e problemas clássicos.
+Implementações próprias, em Python, de estruturas de dados e algoritmos clássicos de ciência da computação. Desenvolvidas do zero, sem uso de bibliotecas prontas, com foco em entender a lógica interna de cada solução.
 
-Estruturado para demonstrar evolução progressiva no domínio dos conceitos base.
+## 📁 Conteúdo
+**Busca:** 
+- Busca linear
+- Busca binária (iterativa e recursiva)
+
+**Ordenação:** 
+- Bubble sort
+- Insertion sort
+- Merge sort
+
+**Estruturas de dados:** 
+- Pilha
+- Deque
+- Lista encadeada
+- Tabela hash
+  
+---
+
+*Todos os algoritmos foram testados e validados manualmente.*
